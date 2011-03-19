@@ -1,6 +1,4 @@
 name: SamplePogicPlugin
 main: org.maski.samplepogicplugin.SamplePogicPlugin
 version: 1
-depend: 
-  - Pogic
 
