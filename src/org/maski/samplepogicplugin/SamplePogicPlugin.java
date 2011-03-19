@@ -1,22 +1,17 @@
 package org.maski.samplepogicplugin;
 
+import org.bukkit.craftbukkit.CraftServer;
+import org.bukkit.craftbukkit.clientmod.ClientModManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.maski.pogic.Pogic;
 
 public class SamplePogicPlugin extends JavaPlugin {
-	Pogic pogic;
-	
 	@Override
 	public void onEnable() {
-		pogic = (Pogic)getServer().getPluginManager().getPlugin("Pogic");
-		pogic.addEntity("Creeper2", EntityCreeper2.class);
-		
+		ClientModManager cmm = ((CraftServer)getServer()).getClientModManager();
+		cmm.addEntity(this, "BabyCreeper", EntityBabyCreeper.class);
 	}
 
 	@Override
 	public void onDisable() {
-		pogic.removeEntity("Creeper2");
 	}
-
-
 }

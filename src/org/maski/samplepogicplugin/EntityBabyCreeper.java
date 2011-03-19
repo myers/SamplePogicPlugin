@@ -95,7 +95,7 @@ public class EntityBabyCreeper extends EntityMonster
 
       e(1);
       this.a += 1;
-      if (this.a >= 90)
+      if (this.a >= 30)
       {
         CraftServer server = ((WorldServer)this.world).getServer();
         Event.Type eventType = Event.Type.EXPLOSION_PRIMED;
