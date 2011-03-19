@@ -25,7 +25,6 @@ public class EntityBabyCreeper extends EntityMonster
   public EntityBabyCreeper(World world)
   {
     super(world);
-    l.info("Creeper2 created");
     this.texture = "/mob/creeper.png";
   }
 
